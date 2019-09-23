@@ -27,12 +27,15 @@
     <link rel="stylesheet" href="css/magnific-popup.min.css" />
 	<!-- Main Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="main.css" />
 
-    
     <!-- Website Icon -->
     <link rel="icon" href="icon.png" />	
+    <!-- Back to top button style -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" data-default-theme="theme-15" data-theme-name="video-background">
+	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 	<!-- Start Loading -->
 	<div class="loading">
     	<div class="spinner">
@@ -43,7 +46,9 @@
 	<!-- End Loading -->
 	
 	<!-- Start ScrollToTop -->
-	<i class="fa fa-angle-up scroll color-1-bg"></i>
+	<!-- <div class="fa fa-angle-up scroll color-1-bg" id = "ScrollButton" onclick="topFunction()"></div> -->
+	<!-- <button onclick="topFunction()" id="ScrollButton" title="Go to top">Top</button> -->
+	
     <!-- End ScrollToTop -->
     
     <!-- Start Navbar -->
@@ -63,24 +68,80 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#hero">эхлэл</a></li>
                         <li><a href="#features">онцлог</a></li>
-                        <li><a href="#download">video</a></li>
+                        <li><a href="#video">video</a></li>
                         <li><a href="#howitworks">танилцуулга</a></li>
                         <li><a href="#faq">түгээмэл асуулт</a></li>
-                        <li><a href="#something">something</a></li>
+                        <li><a href="#product">product</a></li>
                         <li><a href="#contact">холбоо барих</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 	<!-- Start Hero -->
-         <section class="introduction">
-
-        <div class="mainbgcover">
-            <img src="https://prime.gsbcapital.mn/images/background_cover.png">
-        </div>      
-      </div>
+	<section id="hero">
+		<div class="mainbgcover">
+			<h5>home</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
     </section>
-        <!-- End Hero -->
+	<!-- End Hero -->
 
+	<!-- Start feature -->
+	<section id="features">
+		<div class="mainbgcover">
+			<h5>Features</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
+    </section>
+	<!-- End feature -->
+
+	<!-- Start Download -->
+	<section id="video">
+		<div class="mainbgcover">
+			<h5>video</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
+    </section>
+	<!-- End Download -->
+
+	<!-- Start Howitworks -->
+	<section id="howitworks">
+		<div class="mainbgcover">
+			<h5>how it works</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
+    </section>
+	<!-- End Howitworks -->
+
+	<!-- Start faq -->
+	<section id="faq">
+		<div class="mainbgcover">
+			<h5>FAQ</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
+    </section>
+	<!-- End faq -->
+
+	<!-- Start product -->
+	<section id="product">
+		<div class="product">
+			<h5>product</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
+    </section>
+	<!-- End product -->
+
+	<!-- Start Contact -->
+	<section id="contact">
+		<div class="mainbgcover">
+			<h5>Contact</h5>
+	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>      
+    </section>
+	<!-- End Contact -->
+
+	<!-- Scripts -->
+		<script type="text/javascript" src="anchor-move.js"></script>
+	<!-- End Scripts -->
 </body>
 </html>
