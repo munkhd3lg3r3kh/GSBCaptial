@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Importing JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Encoding Meta -->
     <meta charset="UTF-8" />
 	<!-- IE Compatibility Meta -->
@@ -11,31 +14,28 @@
     <meta name="author" content="GSB Capital" />	
 	<!-- Description -->
 	<meta name="description" content="GSB Capital Homepage" />
+	<!-- Font-awesome -->
+	<meta name="referrer" content="strict-origin" />
     <!-- Title -->
     <title>GSB Capital</title>
 
+    <link href="app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic-ext" rel="stylesheet">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<!-- Font-Awesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- Et-Line -->
-    <link rel="stylesheet" href="css/et-line.min.css" />
-    <!-- Owl-Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <!-- Magnific-PopUp -->
-    <link rel="stylesheet" href="css/magnific-popup.min.css" />
-	<!-- Main Style -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="main.css" />
-
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    
+    <!-- Return to top -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Website Icon -->
-    <link rel="icon" href="icon.png" />	
-    <!-- Back to top button style -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="icon" href="images/icon.png" />	
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="main.css" />
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" data-default-theme="theme-15" data-theme-name="video-background">
-	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+	<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 	<!-- Start Loading -->
 	<div class="loading">
     	<div class="spinner">
@@ -52,61 +52,260 @@
     <!-- End ScrollToTop -->
     
     <!-- Start Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="homepage.html"><img src="images/logo.jpg" alt="logo" /></a>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+          id="navbar">
+    <a class="navbar-brand" href="homepage.html"><img src="/Images/Logo.jpg" width="30" height="30" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#hero">эхлэл</a></li>
-                        <li><a href="#features">онцлог</a></li>
-                        <li><a href="#video">video</a></li>
-                        <li><a href="#howitworks">танилцуулга</a></li>
-                        <li><a href="#faq">түгээмэл асуулт</a></li>
-                        <li><a href="#product">product</a></li>
-                        <li><a href="#contact">холбоо барих</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#hero">НҮҮР ХУУДАС <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#features">Онцлог</a>
+        <a class="nav-item nav-link" href="#video">бичлэг</a>
+        <a class="nav-item nav-link" href="#howitworks">ХОЛБОО БАРИХ</a>
+        <a class="nav-item nav-link" href="#faq">faq</a>
+        <a class="nav-item nav-link" href="#product">Бүтээгдэхүүн</a>
+        <a class="nav-item nav-link" href="#contact">Холбоо барих</a>
+        <a class="btn btn-outline-primary" href="#">НЭВТРЭХ</a> 
+      </div>
+        
+
+    </div>
+    </nav>
 	<!-- Start Hero -->
 	<section id="hero">
+		<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+			<iframe frameborder="0" height="100%" width="100%" 
+			src="https://youtube.com/embed/xQ_IQS3VKjA?modestbranding=1&autoplay=0&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=iframe_bgndVideo&origin=https%3A%2F%2Fnumur.mn&allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1">
+			</iframe>
+		</div>
+		<div id="bgndVideo" class="player mb_YTPlayer isMuted" data-property="{videoURL:'https://www.youtube.com/watch?v=xQ_IQS3VKjA',containment:'#hero',autoPlay:true, mute:true, startAt:5, opacity:1}" style="display: none; position: relative;">fr0sty</div> -->		
 		<div class="mainbgcover">
-			<h5>home</h5>
-	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
-		</div>      
+			<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+		        	<div class="contain">
+		            	<div class="box">
+							<div class="maincover">
+								<img src="images/logopng.png" >
+							</div>  
+							<div class="subtext">
+							Хурдан шуурхай, барьцаагүй зээлээ хэзээ ч, хаанаас ч авах боломжтой
+							</div>
+						</div>
+						<div class="videobutton js-modal-btn" data-video-id="8leorFMy0rg">
+						<!--i class="far fa-play-circle"></i> Зээл авах видео заавар үзэх-->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 hidden-sm hidden-xs">
+					<div class="loanrequestdiv">
+						<div class="content">
+								<div class="title">
+								<img src="/gsb/images/tugrik_icon.png" alt=""> Зээл авах
+								</div>
+								<div class="form">
+								<div class="loan-request home">
+									<div class="selectrange">
+										<div class="info">
+											<div class="row">
+												<div class="col-4">
+													<div class="labeltitle">
+														Зээлийн хэмжээ
+													</div>
+												</div>
+												<div class="col-8 text-right">
+													<div class="d-inline-block loan-minus" onclick="loanminus()" style="cursor: pointer;">-
+													</div>
+													<div class="d-inline-block loan-amount">
+														<span id="loan-amount">0</span>₮
+													</div>
+													<div class="d-inline-block loan-plus" onclick="loanplus()" style="cursor: pointer;">+
+													</div>
+												</div>
+		                        			</div>
+										</div>
+										<input id="loanvalue" type="range" min="50000" max="2000000" step="10000" data-rangeslider>
+										<div class="rangesubamount">
+											<span>50'000₮</span>
+											<span class="float-right">2'000'000₮</span>
+										</div>
+									</div>
+								<div class="selectday">
+									<div class="labeltitle">
+										Төлөгдөх хугацаа
+									</div>
+									<div class="daylist">
+										<div class="option-item">
+											<input id="day7" type="radio" name="day" value="7">
+											<label for="day7">
+		                            			<span>7</span>хоног
+		                          			</label>
+		                        		</div>
+		                        		<div class="option-item">
+		                          			<input id="day14" type="radio" name="day" value="14">
+		                          			<label for="day14">
+		                            			<span>14</span>хоног
+		                          			</label>
+		                        		</div>
+		                        		<div class="option-item">
+		                          			<input id="day21" type="radio" name="day" value="21">
+		                          			<label for="day21">
+		                            			<span>21</span>хоног
+		                          			</label>
+		                        		</div>
+				                        <div class="option-item">
+											<input id="day30" type="radio" name="day" value="30" checked>
+											<label for="day30">
+				                            	<span>30</span>хоног
+				                          	</label>
+				                        </div>
+									</div>
+		                    	</div>
+		                    	<div class="loan-info">
+		                      		<div class="row">
+				                        <div class="col-md-6 col-6">
+		                          			<div class="tax">
+		                            			<div class="infotitle">
+		                              			Шимтгэл
+		                            			</div>
+		                            			<div class="infovalue">
+		                              				<span id="feevalue">3'400</span>₮
+		                            			</div>
+		                          			</div>
+		                        		</div>
+		                        		<div class="col-md-6 col-6 text-right">
+		                          			<div class="paydate">
+		                            			<div class="infotitle">
+		                              				Төлөх огноо
+					                            </div>
+		    			                        <div class="infovalue" id="paydate"> -
+		                            			</div>
+		                          			</div>
+		                        		</div>
+		                      		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gradient"></div>
+						<div class="action">
+							<a href="#loginModal" data-toggle="modal" data-dismiss="modal" >Зээлийн хүсэлт илгээх</a>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>		
     </section>
+    <svg class="hero-separator-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2559.88 153.65">
+                <path d="M1327,153.65H2559.91V0C2159.13,107.42,1685.38,148.35,1327,153.65Z" transform="translate(-0.03 0)" fill="#ffac33"></path>
+                <path d="M.09,0,0,153.65H1327C610.63,143.16.09,0,.09,0Z" transform="translate(-0.03 0)" fill="#ffac33"></path>
+	</svg>
 	<!-- End Hero -->
 
 	<!-- Start feature -->
 	<section id="features">
-		<div class="mainbgcover">
-			<h5>Features</h5>
-	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		<div class="container">
+			<div class="title text-center">
+				<h2>Онцлогууд <span class="bg-text">ОНЛЦЛОГ</span></h2>
+				<p>Хурдан, Хялбар, Уян хатан</p>
+			</div>
+			<div class="row">
+                    <div class="col-md-4">
+                        <div class="items box text-right">
+                            <div class="item box">
+                                <div class="item-icon">                                    
+									<i class="fa fa-clock fa-3x icons" ></i>
+                                </div>
+                                <div class="item-content">
+                                    <h4>Хэзээ ч, Хаанаас ч</h4>
+                                    <p>Та интернэттэй орчинд цагт баригдахгүй байршил хамаарахгүйгээр мөнгөө дансандаа шууд авах боломжтой.</p>
+                                </div>
+                            </div>
+                            <div class="item box">
+                                <div class="item-icon">
+                                    <i class="fa fa-file-alt fa-2x icons"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h4>Барьцаа шаардахгүй</h4>
+                                    <p>Та заавал өөрийн гэсэн барьцаа хөрөнгөтэй байх шаардлагагүй.</p>
+                                </div>
+                            </div>
+                            <div class="item box">
+                                <div class="item-icon">
+                                    <i class="far fa-sliders-v"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h4>Өөртөө тохируулж сонго</h4>
+                                    <p>Та зээл болгондоо нөхцөлөө өөрөө сонгон өөртөө тааруулж зээлээ удирдах боломжтой.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image box">
+                            <img src="images/phone1.png" alt="some picture" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="items box">
+                            <div class="item box">
+                                <div class="item-icon">
+                                    <i class="fal fa-smile-wink fa-2x icons"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h4>Хүссэн үедээ, хүссэн хэмжээгээрээ</h4>
+                                    <p>Өөрийн зээлийн эрхийн хэмжээндээ багтаан зээл шаардлагатай үедээ олон дахин ашиглах боломжтой.</p>
+                                </div>
+                            </div>
+                            <div class="item box">
+                                <div class="item-icon">
+                                    <i class="fa fa-file-excel fa-2x icons"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h4>Баримт бичиг шаардахгүй</h4>
+                                    <p>Та материал бүрдүүлэхгүйгээр алтан цагаа хэмнэх боломжтой.</p>
+                                </div>
+                            </div>
+                            <div class="item box">
+                                <div class="item-icon">
+                                    <i class="fa fa-calendar-alt fa-2x icons"></i>
+                                </div>
+                                <div class="item-content">
+                                    <h4>Хуваарьт төлбөр</h4>
+                                    <p>Та сар бүрийн тогтмол өдөр зээлүүдийнхээ эргэн төлөлтөө хийх боломжтой.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 		</div>      
     </section>
 	<!-- End feature -->
 
 	<!-- Start Download -->
 	<section id="video">
-		<div class="mainbgcover">
-			<h5>video</h5>
-	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
+		<div class="title text-center">
+			<h2>Видео</h2>			
+		</div>
+		<div class="video-section" style="background-color: #ffac33; height: 500px">
+			<div class="container">
+				<div class="row">
+					<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="margin: 50px 400px">
+					</iframe>
+				</div>
+			</div>
 		</div>      
     </section>
 	<!-- End Download -->
 
 	<!-- Start Howitworks -->
 	<section id="howitworks">
-		<div class="mainbgcover">
+		<div class="">
 			<h5>how it works</h5>
 	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
 		</div>      
@@ -115,7 +314,7 @@
 
 	<!-- Start faq -->
 	<section id="faq">
-		<div class="mainbgcover">
+		<div class="">
 			<h5>FAQ</h5>
 	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
 		</div>      
@@ -132,16 +331,64 @@
 	<!-- End product -->
 
 	<!-- Start Contact -->
-	<section id="contact">
-		<div class="mainbgcover">
-			<h5>Contact</h5>
-	    	<img src="https://prime.gsbcapital.mn/images/background_cover.png">
-		</div>      
-    </section>
+	<section class="contact p100" id="contact">
+		<div class="overlay gradient"></div>		
+            <div class="container">
+                <div class="title text-center">
+                    <i class="icon-chat color-1"></i>
+                    <h2>Холбоо барих <span class="bg-text">Холбогдох</span></h2>
+                    <p>Таны бизнесийн үнэнч анд.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="box">
+                            <img src="images/contact.jpg" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="box info-box">
+                            <div class="item">
+                                <i class="fa fa-map-marker fa"></i>
+                                <h4>Хаяг</h4>
+                                <span>Хан-Уул дүүргийн 15-р хороо, Үйлдвэр /17040/, Чингисийн өргөн чөлөө 37/2</span>
+                            </div>
+                            <div class="item">
+                                <i class="fa fa-phone"></i>
+                                <h4>Утас</h4>
+                                <span><a href="">(+976) 9566 5577</a></span>
+                            </div>
+                            <div class="item">
+                                <i class="fa fa-envelope-o"></i>
+                                <h4>И-мейл</h4>
+                                <span><a href="" target="_blank">info@gsbcapital.mn</a></span>
+                            </div>
+                            <div class="item">
+                                <i class="fa fa-clock-o"></i>
+                                <h4>Ажиллах цаг</h4>
+                                <span>Даваа-Баасан 00:00 аас 24:00.</span>
+                            </div>
+                            <div class="icons">
+                                <a href="https://www.facebook.com/GSBCapital/"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 	<!-- End Contact -->
-
+	<footer class="text-center">
+		<div class="container">
+			<p>Copyright © 2019 GSBCapital </a></p>
+		</div>
+	</footer>
 	<!-- Scripts -->
-		<script type="text/javascript" src="anchor-move.js"></script>
+		<script src="anchor-move.js"></script>
+		<script>
+			
+		</script>
+		 
+   
 	<!-- End Scripts -->
 </body>
 </html>

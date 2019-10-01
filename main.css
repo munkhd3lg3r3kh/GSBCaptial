@@ -1,9 +1,248 @@
-body {
+body 
+{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
 }
-.container {
-    width: 1170px;
+section
+{
+	padding-top: 80px;
+
 }
+svg
+{
+	background-color: #FFF;
+}
+#navbar
+{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+#return-to-top 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.sticky 
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content 
+{
+	padding-top: 60px;
+}
+.container
+{
+	width : 1170px;
+}
+.maincover img
+{	
+	vertical-align: center;
+	width: 300px;
+	
+}
+.mainbgcover {
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+
+}
+.mainbgcover img {
+	position: absolute;		
+	right:0;
+	top:0;
+	width: 40%;
+	object-fit: cover;
+}
+
+.title h2 {
+
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000;
+
+}
+.bg-text 
+{
+    font-size: 2.2em;
+    color: #333;
+    opacity: 0.04;
+    position: absolute;
+    top: -20px;
+    text-align: inherit;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);	
+}
+.download-section .title .bg-text {opacity: 0.1;}
+.contact .title .bg-text {opacity: 0.1;}
+
+.icons
+{
+	color:#ffac33;
+}
+
+.gradient {
+	background: -webkit-linear-gradient(315deg, #ffac33, #001510) !important;
+    background: -o-linear-gradient(315deg, #ffac33, #001510) !important;
+	background: linear-gradient(135deg, #ffac33, #001510) !important;
+}
+/*** Start Contact ***/
+
+.contact {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c2/UB_downtown.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.contact .title {position: relative;}
+.contact .title h2 {color: #fff;}
+.contact .title p {color: #f5f7fb;}
+
+.contact .title .bg-text {opacity: 0.1;}
+
+.contact .box .form-control {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+    border: none;
+    text-transform: capitalize;
+    height: 50px;
+    border-radius: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+.contact .box .form-control:focus {background: rgba(255,255,255,.4);}
+
+.contact .box textarea.form-control {
+    height: 245px;
+    resize: none;
+}
+
+.contact .box .send {
+    padding: 8px 50px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+}
+
+.contact .info-box {
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact .box .item {margin-bottom: 20px;}
+
+.contact .box .item i {
+    color: #fff;
+    font-size: 30px;
+    float: left;
+    width: 40px;
+}
+
+.contact .box .item h4 {
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #fff;
+    font-size:16px;
+}
+
+.contact .box .item span,
+.contact .box .item span a {
+    color: #f5f7fb;
+}
+
+.contact .info-box .icons a {margin-right: 6px;}
+.contact .info-box .icons a:last-child {margin-right: 0;}
+
+.contact .info-box .icons a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.contact .info-box .icons a i.fa-facebook {background-color: #3b5a9a;}
+.contact .info-box .icons a i.fa-twitter {background-color: #54abf0;}
+.contact .info-box .icons a i.fa-youtube {background-color: #dd4b3e;}
+.contact .info-box .icons a i.fa-linkedin {background-color: #0077b5;}
+.contact .info-box .icons a i.fa-behance {background-color: #1769ff;}
+
+.contact .output {
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+/*** End Contact ***/
+
+/*** Start Footer ***/
+footer {
+	height: 50px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+}
+
+footer p {text-transform: capitalize;}
+
+/*** End Footer ***/
